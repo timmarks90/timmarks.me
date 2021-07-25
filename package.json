@@ -1,7 +1,7 @@
 {
   "name": "home",
   "version": "0.1.0",
-  "homepage": "https://timmarks90.github.io/timmarks.me",
+  "homepage": "https://timmarks.me",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
