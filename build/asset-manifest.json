@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/timmarks.me/static/css/main.a617e044.chunk.css",
+    "main.js": "/timmarks.me/static/js/main.1c96d2bb.chunk.js",
+    "main.js.map": "/timmarks.me/static/js/main.1c96d2bb.chunk.js.map",
+    "runtime-main.js": "/timmarks.me/static/js/runtime-main.326598d5.js",
+    "runtime-main.js.map": "/timmarks.me/static/js/runtime-main.326598d5.js.map",
+    "static/js/2.d0aab8f8.chunk.js": "/timmarks.me/static/js/2.d0aab8f8.chunk.js",
+    "static/js/2.d0aab8f8.chunk.js.map": "/timmarks.me/static/js/2.d0aab8f8.chunk.js.map",
+    "static/js/3.4e9a4806.chunk.js": "/timmarks.me/static/js/3.4e9a4806.chunk.js",
+    "static/js/3.4e9a4806.chunk.js.map": "/timmarks.me/static/js/3.4e9a4806.chunk.js.map",
+    "index.html": "/timmarks.me/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/timmarks.me/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.d0aab8f8.chunk.js.LICENSE.txt": "/timmarks.me/static/js/2.d0aab8f8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/timmarks.me/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.326598d5.js",
+    "static/js/2.d0aab8f8.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.1c96d2bb.chunk.js"
+  ]
+}
