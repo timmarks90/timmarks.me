@@ -31,7 +31,7 @@ const Navigation = () => {
 	}, []);
 
 	return (
-		<div className="flex justify-between w-fit p-2 text-center m-auto items-center mb-20 bg-white border border-gray-100 shadow-sm rounded-full sm:fixed relative sm:left-0 sm:right-0 z-10">
+		<div className="flex justify-between w-fit p-2 text-center m-auto items-center mb-20 bg-white border border-gray-100 shadow-sm rounded-full fixed left-0 right-0 z-10">
 			<Link
 				href="#intro"
 				passHref

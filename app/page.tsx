@@ -7,10 +7,10 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<main className="m-auto mt-6 w-full max-w-5xl px-8">
+		<main className="m-auto mt-3 sm:mt-6 w-full max-w-5xl px-8">
 			<section id="intro">
 				<Nav />
-				<div className="sm:h-screen flex items-center justify-start">
+				<div className="h-screen flex items-center justify-start">
 					<div>
 						<div className="mb-10">
 							<Image
