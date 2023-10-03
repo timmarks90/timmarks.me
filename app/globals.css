@@ -92,6 +92,10 @@
 		@apply text-base font-light;
 	}
 
+	.social {
+		@apply h-8 sm:h-10 w-auto;
+	}
+
 	.card {
 		@apply my-6 p-6 sm:p-10 border border-gray-100 rounded-lg shadow-sm;
 	}

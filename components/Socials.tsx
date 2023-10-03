@@ -14,7 +14,7 @@ function Socials() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{ width: 'auto', height: '40px' }}
+							className="social"
 						/>
 					</li>
 				</Link>
@@ -26,7 +26,7 @@ function Socials() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{ width: 'auto', height: '40px' }}
+							className="social"
 						/>
 					</li>
 				</Link>
@@ -38,7 +38,7 @@ function Socials() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{ width: 'auto', height: '40px' }}
+							className="social"
 						/>
 					</li>
 				</Link>
@@ -50,7 +50,7 @@ function Socials() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{ width: 'auto', height: '40px' }}
+							className="social"
 						/>
 					</li>
 				</Link>
@@ -62,7 +62,7 @@ function Socials() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{ width: 'auto', height: '40px' }}
+							className="social"
 						/>
 					</li>
 				</Link>
