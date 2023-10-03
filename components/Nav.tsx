@@ -35,7 +35,6 @@ const Navigation = () => {
 			<Link
 				href="#intro"
 				passHref
-				scroll={false}
 				className="{activeLink === 'intro' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
 				Intro
@@ -44,7 +43,6 @@ const Navigation = () => {
 			<Link
 				href="#product"
 				passHref
-				scroll={false}
 				className="{activeLink === 'product' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
 				Product
@@ -53,7 +51,6 @@ const Navigation = () => {
 			<Link
 				href="#design"
 				passHref
-				scroll={false}
 				className="{activeLink === 'design' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
 				Design
@@ -61,7 +58,6 @@ const Navigation = () => {
 			<Link
 				href="#coding"
 				passHref
-				scroll={false}
 				className="{activeLink === 'coding' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
 				Coding
