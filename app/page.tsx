@@ -10,7 +10,7 @@ export default function Home() {
 		<main className="m-auto mt-6 w-full max-w-5xl px-8">
 			<section id="intro">
 				<Nav />
-				<div className="h-screen flex items-center justify-start">
+				<div className="sm:h-screen flex items-center justify-start">
 					<div>
 						<div className="mb-10">
 							<Image
