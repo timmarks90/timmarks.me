@@ -34,6 +34,7 @@ const Navigation = () => {
 		<div className="flex justify-between w-fit p-2 text-center m-auto items-center mb-20 bg-white border border-gray-100 shadow-sm rounded-full sm:fixed relative sm:left-0 sm:right-0 z-10">
 			<Link
 				href="#intro"
+				passHref
 				scroll={false}
 				className="{activeLink === 'intro' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
@@ -42,6 +43,7 @@ const Navigation = () => {
 
 			<Link
 				href="#product"
+				passHref
 				scroll={false}
 				className="{activeLink === 'product' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
@@ -50,6 +52,7 @@ const Navigation = () => {
 
 			<Link
 				href="#design"
+				passHref
 				scroll={false}
 				className="{activeLink === 'design' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
@@ -57,6 +60,7 @@ const Navigation = () => {
 			</Link>
 			<Link
 				href="#coding"
+				passHref
 				scroll={false}
 				className="{activeLink === 'coding' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
 			>
