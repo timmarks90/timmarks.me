@@ -25,7 +25,7 @@ export default async function DribbblePage() {
 		<div>
 			<ul className="flex justify-between flex-wrap">
 				{data.map((shot: DribbbleShot) => (
-					<li key={shot.id} className="py-8 pr-8 w-full sm:w-1/2">
+					<li key={shot.id} className="py-8 sm:pr-8 w-full sm:w-1/2">
 						<Link href={shot.html_url} target="_blank">
 							<img
 								src={shot.images.two_x}
