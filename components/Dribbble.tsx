@@ -21,10 +21,11 @@ async function DribbbleFetch() {
 
 export default async function DribbblePage() {
 	const data = await DribbbleFetch();
+	const limitedData = data.slice(0, 8);
 	return (
 		<div>
 			<ul className="flex justify-between flex-wrap">
-				{data.map((shot: DribbbleShot) => (
+				{limitedData.map((shot: DribbbleShot) => (
 					<li key={shot.id} className="py-8 sm:pr-8 w-full sm:w-1/2">
 						<Link href={shot.html_url} target="_blank">
 							<img
