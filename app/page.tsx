@@ -62,21 +62,21 @@ export default function Home() {
 					I'm well versed in various no code platforms such as Framer, Webflow,
 					and Squarespace, and I enjoy dabbling in code directly. Latest
 					preferred stack:
-					<ul className="mt-8 flex justify-start sm:justify-between flex-col sm:flex-row w-fit sm:space-x-4">
-						<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
-							Next JS / Typescript
-						</li>
-						<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
-							Tailwind CSS
-						</li>
-						<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
-							Supabase
-						</li>
-						<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
-							Vercel
-						</li>
-					</ul>
 				</p>
+				<ul className="mt-8 flex justify-start sm:justify-between flex-col sm:flex-row w-fit sm:space-x-4">
+					<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
+						Next JS / Typescript
+					</li>
+					<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
+						Tailwind CSS
+					</li>
+					<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
+						Supabase
+					</li>
+					<li className="p-2 sm:text-center items-center mb-2 sm:mb-20 bg-white border border-gray-100 shadow-sm">
+						Vercel
+					</li>
+				</ul>
 			</section>
 			<section className="mx-auto mt-10 py-10 text-center border-t border-t-1  border-gray-100">
 				<p className="text-4xl">Want to chat?</p>

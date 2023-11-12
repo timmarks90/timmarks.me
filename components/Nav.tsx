@@ -5,37 +5,50 @@ import { useState, useEffect } from 'react';
 
 const Navigation = () => {
 	const [activeLink, setActiveLink] = useState('');
-	console.log('nav');
+	const [isMounted, setIsMounted] = useState(false);
 
 	useEffect(() => {
-		console.log('useffect');
+		setIsMounted(true); // Component is now mounted
+	}, []);
+
+	useEffect(() => {
+		if (!isMounted) return;
+
 		const handleScroll = () => {
-			const scrollY = window.scrollY;
 			const sections = document.querySelectorAll('section');
+			let activeSection = '';
 
 			sections.forEach((section) => {
-				const sectionTop = section.offsetTop;
-				const sectionId = section.getAttribute('id') || '';
-				if (scrollY >= sectionTop - 60) {
-					setActiveLink(sectionId);
+				const sectionTop = section.offsetTop - 60;
+				const sectionHeight = section.offsetHeight;
+				const isBottomOfPage =
+					window.innerHeight + window.scrollY >= document.body.offsetHeight;
+
+				if (
+					(window.scrollY >= sectionTop &&
+						window.scrollY < sectionTop + sectionHeight) ||
+					(isBottomOfPage && section.id === 'coding')
+				) {
+					activeSection = section.getAttribute('id') || '';
 				}
 			});
+
+			setActiveLink(activeSection);
 		};
 
-		handleScroll(); // Initialize active link on page load
 		window.addEventListener('scroll', handleScroll);
+		handleScroll(); // Call it to set initial active section
 
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [isMounted]);
 
 	return (
 		<div className="flex justify-between w-fit p-2 text-center m-auto items-center mb-20 bg-white border border-gray-100 shadow-sm rounded-full fixed left-0 right-0 z-10">
 			<Link
 				href="#intro"
-				passHref
-				className="{activeLink === 'intro' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
+				className={`${
+					activeLink === 'intro' ? 'active' : ''
+				} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer`}
 			>
 				Intro
 			</Link>
@@ -43,7 +56,9 @@ const Navigation = () => {
 			<Link
 				href="#product"
 				passHref
-				className="{activeLink === 'product' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
+				className={`${
+					activeLink === 'product' ? 'active' : ''
+				} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer`}
 			>
 				Product
 			</Link>
@@ -51,14 +66,18 @@ const Navigation = () => {
 			<Link
 				href="#design"
 				passHref
-				className="{activeLink === 'design' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
+				className={`${
+					activeLink === 'design' ? 'active' : ''
+				} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer`}
 			>
 				Design
 			</Link>
 			<Link
 				href="#coding"
 				passHref
-				className="{activeLink === 'coding' ? 'active' : ''} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer"
+				className={`${
+					activeLink === 'coding' ? 'active' : ''
+				} px-2 sm:px-4 py-2 hover:bg-gray-100 hover:rounded-full hover:cursor-pointer`}
 			>
 				Coding
 			</Link>
