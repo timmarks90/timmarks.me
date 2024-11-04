@@ -11,7 +11,7 @@ const Product = () => {
 						<p className="text-2xl sm:text-4xl font-bold">Lob</p>
 						<div className="flex flex-col sm:items-end">
 							<p className="text-md sm:text-lg font-medium text-gray-500">
-								Director of Product
+								Sr. Director of Product
 							</p>
 							<p className="text-gray-400">2021-Current</p>
 						</div>
