@@ -29,7 +29,7 @@ const Product = () => {
               </div>
             </div>
             <p>
-              I ran the product team at{" "}
+              I led the product team at{" "}
               <Link
                 className={`font-medium`}
                 href="https://www.lob.com"
@@ -159,7 +159,7 @@ const Product = () => {
               </div>
             </div>
             <p>
-              I ran the product team at{" "}
+              I led the product team at{" "}
               <Link
                 className={`font-medium`}
                 href="https://www.gubagoo.com"
